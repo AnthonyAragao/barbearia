@@ -4,6 +4,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .header-container{
@@ -69,7 +70,6 @@ header{
     font-weight: 600;
     text-transform: uppercase;
     overflow: hidden;
-    border-radius: 4px;
 }
 
 .btn::before{

@@ -1,0 +1,136 @@
+/* Footer */
+footer{
+    background-image: url("../images/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__sections{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__section{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+}
+
+.footer__title{
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+}
+
+.footer__title::after{
+    content: '';
+    width: 80%;
+    height: 4px;
+    background-color: var(--clr-primary); 
+    position: absolute;
+    bottom: 0;  
+    left: 0;
+}
+
+
+.footer__list-item{
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    width: fit-content;
+}
+
+.footer__list-item a{
+    color: #fff;
+}
+
+.footer__list-item::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--clr-primary); 
+    position: absolute;
+    bottom: 0;  
+    transition: width .5s;
+}
+
+.footer__list-item:hover::after{
+    width: 100%;
+}
+
+.footer__text{
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__text p i{
+    font-size: .9rem;
+}
+
+.footer__social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__social-icons a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.1rem;
+}
+
+.footer__icon{
+    color: #fff;
+    font-size: .9rem;
+    cursor: pointer;
+}    
+
+
+.footer__map{
+    margin: 10px auto;
+    width: 100%;
+}
+
+.footer__map iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.footer__copyright {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    padding: 10px 0;
+}
+
+.footer__copyright span{
+    color: var(--clr-primary);
+}
