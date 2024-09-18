@@ -1,0 +1,87 @@
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-container{
+    margin: 20px auto;
+    background-color: var(--bg-primary);
+    color: white;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.navigation-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.navigation__item{
+    position: relative;
+}
+
+.navigation__item::before{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-primary);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navigation__item:hover::before{
+    width: 100%;
+}
+
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  position: absolute;
+  content: "";
+}
+
+.btn{
+    background-color: var(--clr-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: max-content;
+    padding: 6px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.btn::before{
+    background-color: var(--bg-primary);
+    inset: 0;
+    z-index: -1;
+    transform: skewY(-15deg) scaleY(0);
+    transition: 0.5s;
+}
+
+.btn:hover::before,
+.btn:focus::before{
+    transform: skewY(-15deg) scaleY(2.5);
+}
+
