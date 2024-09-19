@@ -97,6 +97,7 @@
     width: 80%;
     height: auto;
     position: relative;
+    z-index: 1;
 }
 
 .services__img {
@@ -123,6 +124,7 @@
     margin-top: 10px;
 }
 
+
 .services__thumb {
     position: absolute;
     bottom: -50px;
@@ -131,6 +133,19 @@
 
 .services__thumb-img {
     width: 300px;
-    border: 10px solid var(--bg-secondary);
-    border-radius: 4px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.services__thumb::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    transform: translate(-15px, -13px);
+    border: 5px solid var(--bg-primary);
 }

@@ -113,14 +113,29 @@ footer{
 
 
 .footer__map{
-    margin: 10px auto;
+    position: relative;
     width: 100%;
+    height: 300px;
+    margin: 10px auto;
 }
+
 
 .footer__map iframe{
     width: 100%;
-    height: 300px;
+    height: 100%;
     border: none;
+}
+
+
+.footer__map::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144, 79, 53, 0.3); 
+    pointer-events: none; 
 }
 
 .footer__copyright {

@@ -82,6 +82,6 @@ header{
 
 .btn:hover::before,
 .btn:focus::before{
-    transform: skewY(-15deg) scaleY(2.5);
+    transform: skewY(-15deg) scaleY(3);
 }
 
