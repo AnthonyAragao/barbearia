@@ -21,6 +21,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--ff-teko);
+    scroll-behavior: smooth;
 }
 
 /* Global Styles */
