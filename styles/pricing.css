@@ -1,0 +1,40 @@
+/* pricing */
+.pricing{
+    background-color: var(--bg-primary);
+    padding: 60px 0;
+}
+
+.pricing-container{
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pricing-card{
+    width: 540px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color:  hsla(36, 61%, 58%, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pricing-card img{
+    border-radius: 50%;
+}
+
+.pricing-card__texts h3{
+    font-size: 1.7rem;
+    color: var(--clr-primary);
+}
+
+.pricing-card__price{
+    font-size: 3rem;
+    color:  hsl(36, 61%, 58%);
+    margin-left: auto;
+}

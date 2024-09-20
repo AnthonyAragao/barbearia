@@ -1,40 +1,7 @@
 /* Services */
 .services{
     background-color: var(--bg-secondary);
-    padding: 50px 0;
-}
-
-.services .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.services__text{
-    font-size: 1.4rem;
-    color: var(--clr-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em; 
-    margin-bottom: -18px;
-}
-
-.services__title{
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.services__title::after{
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    background-color: var(--clr-primary);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    padding: 60px 0;
 }
 
 .services__container{
@@ -45,7 +12,6 @@
     gap: 20px;
 }
 
-
 .services__card{
     width: 30%;
     display: flex;
@@ -53,7 +19,6 @@
     align-items: center;
     text-align: center;
 }
-
 
 .services__card__img{
     width: 250px;
@@ -75,7 +40,6 @@
 .services__card__img img:hover{
     transform: scale(1.1);
 }
-
 
 .services__card-title {
     font-size: 2rem;
@@ -137,7 +101,6 @@
     position: relative;
     z-index: 2;
 }
-
 
 .services__thumb::after {
     content: "";

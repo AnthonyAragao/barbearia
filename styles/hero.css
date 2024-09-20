@@ -9,6 +9,11 @@
     color: white;
 }
 
+.hero .container{
+    align-items: start;
+}
+
+
 .hero__title{
     font-size: 5rem;
     font-weight: 700;
