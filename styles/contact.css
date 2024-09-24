@@ -1,7 +1,6 @@
 /* Contact */
 .contact{
     background-color: var(--bg-primary); 
-    padding: 70px 0;
 }
 
 .contact__form{

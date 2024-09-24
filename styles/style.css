@@ -46,6 +46,10 @@ section, footer{
     align-items: center;
 }
 
+section .container{
+    padding: 70px 0;
+}
+
 .container__text{
     font-size: 1.4rem;
     color: var(--clr-primary);

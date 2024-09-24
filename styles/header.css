@@ -45,7 +45,6 @@ header{
     width: 100%;
 }
 
-
 .has-before,
 .has-after {
   position: relative;
@@ -84,4 +83,3 @@ header{
 .btn:focus::before{
     transform: skewY(-15deg) scaleY(3);
 }
-

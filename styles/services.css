@@ -1,7 +1,6 @@
 /* Services */
 .services{
     background-color: var(--bg-secondary);
-    padding: 60px 0;
 }
 
 .services__container{
