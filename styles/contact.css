@@ -1,0 +1,66 @@
+/* Contact */
+.contact{
+    background-color: var(--bg-secondary); 
+    padding: 70px 0;
+}
+
+.contact__form{
+    width: 100%;
+}
+
+.contact__form .btn {
+    margin-top: 20px;   
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+  
+.form-group input, .form-group textarea  {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.form-group label {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+    transition: all 0.2s ease;
+    pointer-events: none; 
+    transform: translateY(-50%); 
+}
+
+.form-group input:focus + label,    
+.form-group input:valid + label, 
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label{
+    top: -15px;
+    left: -2px;
+}
+
+.form-group i{
+    color: #aaa;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    pointer-events: none; 
+}
