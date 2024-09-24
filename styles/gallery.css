@@ -1,0 +1,37 @@
+/* gallery */
+.gallery{
+    background-color: var(--bg-secondary);
+    padding: 70px 0;
+}
+
+.gallery__container{
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+
+.gallery__container .row{
+    margin-bottom: 30px!important;
+}
+
+.gallery__card img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery__container::before, .gallery__container::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    background-color: var(--clr-primary);
+    top: -40px;
+}
+
+.gallery__container::before{
+    left: 0;
+}
+
+.gallery__container::after{
+    right: 0;
+}

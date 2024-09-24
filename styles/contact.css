@@ -1,6 +1,6 @@
 /* Contact */
 .contact{
-    background-color: var(--bg-secondary); 
+    background-color: var(--bg-primary); 
     padding: 70px 0;
 }
 
@@ -19,7 +19,6 @@
     width: 100%;
     margin-bottom: 40px;
 }
-
 
 .form-group {
     position: relative;
